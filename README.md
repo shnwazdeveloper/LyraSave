@@ -28,16 +28,6 @@
 
 ---
 
-## App Interface
-
-<p align="center">
-  <img src="assets/screenshot_permission.png" width="310" alt="Lyra Save Onboarding Screen" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/screenshot_preview.png" width="310" alt="Lyra Save Media Preview Screen" />
-</p>
-
----
-
 ## Key Features
 
 | Feature | UI Indicator | Description |
