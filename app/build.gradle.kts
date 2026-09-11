@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.statussaver.vault"
+    namespace = "com.shnwaz.lyrasave"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.statussaver.vault"
+        applicationId = "com.shnwaz.lyrasave"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -17,14 +17,19 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("../lyrasave.jks")
+            storePassword = "lyrasave123"
+            keyAlias = "lyrasave"
+            keyPassword = "lyrasave123"
+        }
+    }
+
     buildTypes {
         release {
-            isMinifyEnabled = true
-            isShrinkResources = true
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
         }
         debug {
             isMinifyEnabled = false

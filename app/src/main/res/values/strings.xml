@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">StatusVault</string>
-    <string name="toolbar_subtitle">Save WhatsApp Statuses</string>
+    <string name="app_name">Lyra Save</string>
+    <string name="toolbar_subtitle"></string>
 
     <!-- Navigation -->
     <string name="nav_images">Images</string>
     <string name="nav_videos">Videos</string>
     <string name="nav_saved">Saved</string>
+    <string name="nav_settings">Settings</string>
 
     <!-- Actions -->
     <string name="save">Save</string>
@@ -17,12 +18,36 @@
     <string name="grant_access">Grant Folder Access</string>
     <string name="grant_access_business">Grant Folder Access</string>
     <string name="already_granted">Already granted? Tap here</string>
+    <string name="auto_detect_statuses">Auto-Detect Statuses</string>
 
     <!-- Permission Screen -->
-    <string name="permission_screen_subtitle">Grant one-time folder access to view\nand save WhatsApp statuses</string>
+    <string name="permission_screen_subtitle">One-tap to auto-detect or grant folder access\nto view and save WhatsApp statuses</string>
     <string name="whatsapp_label">WhatsApp</string>
     <string name="whatsapp_business_label">WhatsApp Business</string>
-    <string name="whatsapp_grant_desc">Grant access to the .Statuses folder to start browsing statuses.</string>
+    <string name="whatsapp_grant_desc">Grant access to the .Statuses or Media folder to browse statuses.</string>
+
+    <!-- Settings & Developer Profile -->
+    <string name="settings_title">Settings</string>
+    <string name="about_developer">About Developer</string>
+    <string name="dev_name">SHNWAZ</string>
+    <string name="dev_tagline">Web Developer &amp; UI/UX Designer</string>
+    <string name="dev_role">Founder @SayaProject</string>
+    <string name="dev_github">GitHub</string>
+    <string name="dev_github_handle">@shnwazdeveloper</string>
+    <string name="dev_twitter">X / Twitter</string>
+    <string name="dev_twitter_handle">@shnwazdev</string>
+    <string name="dev_instagram">Instagram</string>
+    <string name="dev_instagram_handle">@shnwazxc</string>
+    <string name="dev_website">Website</string>
+    <string name="dev_website_url">shnwaz.dev</string>
+    <string name="settings_source">Status Source</string>
+    <string name="settings_source_desc">Select your active WhatsApp application</string>
+    <string name="settings_storage">Storage &amp; Downloads</string>
+    <string name="settings_storage_desc">Saved to Pictures/LyraSave &amp; Movies/LyraSave</string>
+    <string name="settings_clear_cache">Clear App Cache</string>
+    <string name="settings_clear_cache_desc">Free up space from temporary cached status previews</string>
+    <string name="settings_cache_cleared">Temporary cache cleared successfully!</string>
+    <string name="app_version">Lyra Save v1.0 (Universal Release)</string>
 
     <!-- Empty States -->
     <string name="no_images_yet">No Image Statuses</string>
@@ -40,4 +65,7 @@
     <string name="permission_revoked">Folder access was revoked. Please re-grant.</string>
     <string name="refreshing">Refreshing…</string>
     <string name="file_saved_success">File saved successfully!</string>
+    <string name="auto_detecting">Auto-detecting WhatsApp statuses...</string>
+    <string name="auto_detect_success">Auto-detection successful!</string>
+    <string name="auto_detect_none">Auto-detection found 0 new statuses. You can also pick the folder manually.</string>
 </resources>

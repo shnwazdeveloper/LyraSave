@@ -58,12 +58,9 @@
 
     </LinearLayout>
 
-    <!-- Loading Progress -->
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:visibility="gone" />
+    <!-- Skeleton Loading -->
+    <include
+        android:id="@+id/layoutSkeleton"
+        layout="@layout/layout_status_skeleton" />
 
 </FrameLayout>

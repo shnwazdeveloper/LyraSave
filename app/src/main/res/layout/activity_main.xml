@@ -30,14 +30,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:menu="@menu/toolbar_menu"
-                app:navigationIcon="@drawable/ic_app_logo"
-                app:navigationIconTint="?attr/colorPrimary"
+                app:contentInsetStart="16dp"
+                app:contentInsetStartWithNavigation="0dp"
                 app:titleTextColor="?attr/colorOnSurface">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivToolbarLogo"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/ic_app_logo"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+                        android:layout_marginEnd="12dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -46,13 +56,6 @@
                         android:textAppearance="?attr/textAppearanceTitleLarge"
                         android:textColor="?attr/colorOnSurface"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/toolbar_subtitle"
-                        android:textAppearance="?attr/textAppearanceLabelSmall"
-                        android:textColor="?attr/colorOnSurfaceVariant" />
 
                 </LinearLayout>
 
@@ -94,13 +97,14 @@
             android:padding="32dp">
 
             <!-- App logo hero -->
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="48dp"
                 android:src="@drawable/ic_app_logo"
-                app:tint="?attr/colorPrimary" />
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -121,13 +125,24 @@
                 android:textAppearance="?attr/textAppearanceBodyMedium"
                 android:textColor="?attr/colorOnSurfaceVariant" />
 
+            <!-- Auto Detect Statuses Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAutoDetect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/auto_detect_statuses"
+                app:icon="@drawable/ic_refresh"
+                app:cornerRadius="14dp"
+                style="@style/Widget.Material3.Button.TonalButton" />
+
             <!-- Accent divider -->
             <View
                 android:layout_width="48dp"
                 android:layout_height="3dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 android:background="?attr/colorPrimary" />
 
             <!-- ── WhatsApp Card ── -->
